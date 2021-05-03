@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Twitch</string>
+    <string name="username">Username</string>
+    <string name="labelLog_in">Log In</string>
+    <string name="btnLog_in">Log In</string>
+    <string name="password">Password</string>
+    <string name="trouble_logging_in">Trouble logging in?</string>
+    <string name="log_in">Log in</string>
+    <string name="btnSignUp">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="text_view">Text view</string>
+    <string name="verify">You´ll need to verify that you own this email account</string>
+    <string name="use_phone">Use phone instead</string>
+    <string name="labelEmail">Email</string>
+    <string name="title_activity_test">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorites">Favorites</string>
+    <string name="discover">Discover</string>
+    <string name="browse">Browse</string>
+
+
+</resources>

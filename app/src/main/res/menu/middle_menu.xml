@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:id="@+id/noShow"
+        android:title="No volver a mostrar"
+        app:showAsAction="never"
+
+
+        android:orderInCategory="10"
+        android:iconTint="@color/gris_top_menu"
+
+
+
+        />
+    <item
+
+        android:id="@+id/iconMessage"
+        android:title="Quitar categoria"
+        app:showAsAction="never"
+
+        android:orderInCategory="20"
+        android:iconTint="@color/gris_top_menu"
+        />
+
+</menu>

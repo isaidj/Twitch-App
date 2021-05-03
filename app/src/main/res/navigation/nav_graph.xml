@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentDiscover">
+
+    <fragment
+        android:id="@+id/fragmentDiscover"
+        android:name="com.example.twitch.FragmentDiscover"
+        android:label="fragment_discover"
+
+        tools:layout="@layout/fragment_discover" />
+    <fragment
+        android:id="@+id/fragmentFavorite"
+        android:name="com.example.twitch.FragmentFavorite"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/fragmentBrowse"
+        android:name="com.example.twitch.FragmentBrowse"
+        android:label="fragment_browse"
+        tools:layout="@layout/fragment_browse" />
+</navigation>
