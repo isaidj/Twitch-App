@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class profile : AppCompatActivity() {
-
-    private lateinit var btnBack:ImageButton
+class Messages : AppCompatActivity() {
+    private lateinit var backChat:ImageButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
-        btnBack=findViewById(R.id.backCuenta)
-        btnBack.setOnClickListener {
-            intent=Intent(this,MainActivity::class.java)
+        setContentView(R.layout.activity_messages)
+        backChat=findViewById(R.id.backChat)
+        backChat.setOnClickListener {
+            intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
     }

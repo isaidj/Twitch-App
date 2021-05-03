@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Twitch</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="labelLog_in">Iniciar sesion</string>
+    <string name="btnLog_in">Iniciar sesion</string>
+    <string name="log_in">Iniciar sesion</string>
+    <string name="btnSignUp">Iniciar sesion</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="favorites">Favoritos</string>
+    <string name="discover">Descubre</string>
+    <string name="browse">Navegar</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="title_dashboard">Tablero</string>
+    <string name="title_home">Inicio</string>
+    <string name="use_phone">Usa tu telefono</string>
+    <string name="verify">Necesitas verificar que eres propietario de esta cuenta</string>
+    <string name="trouble_logging_in">¿Problemas con el inicio?</string>
+    <string name="password">Constraseña</string>
+</resources>

@@ -34,14 +34,14 @@ class SignIn : AppCompatActivity() {
 
             builder.setTitle("Create account")
             builder.setMessage("¿Do you want create this account?")
-            builder.setPositiveButton("Yes"){dialog, which ->
+            builder.setPositiveButton("Ok"){dialog, which ->
                 Toast.makeText(applicationContext,"Creada",Toast.LENGTH_SHORT).show()
 
                 CallMainMenu()
 
             }
-            builder.setNegativeButton("No"){dialog, which ->
-                Toast.makeText(applicationContext,"C",Toast.LENGTH_SHORT).show()
+            builder.setNegativeButton("Cancel"){dialog, which ->
+                dialog.cancel()
             }
             val dialog: AlertDialog = builder.create()
 

@@ -8,7 +8,19 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <TextView
+        android:id="@+id/recommendedCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="My favorites channels"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
 
+
+        />
 
 
 </FrameLayout>

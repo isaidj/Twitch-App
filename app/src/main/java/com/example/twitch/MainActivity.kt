@@ -87,6 +87,21 @@ class MainActivity : AppCompatActivity() {
 
                     return@setOnMenuItemClickListener true
                 }
+                R.id.iconMessage -> {
+
+                    intent=Intent(this,Messages::class.java)
+                    startActivity(intent)
+
+                    return@setOnMenuItemClickListener true
+                }
+                R.id.iconSearch -> {
+
+
+                    Toast.makeText(applicationContext, "Busqueda no disponible", Toast.LENGTH_SHORT).show()
+
+
+                    return@setOnMenuItemClickListener true
+                }
 
             }
             false

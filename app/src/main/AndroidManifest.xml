@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_twitch_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Twitch">
-        <activity android:name=".profile"></activity>
+        <activity android:name=".Messages"></activity>
+        <activity android:name=".profile" />
         <activity android:name=".SignIn" />
         <activity
             android:name=".Login"
