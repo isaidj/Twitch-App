@@ -21,7 +21,7 @@
         android:id="@+id/cuenta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cuenta"
+        android:text="Account"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -64,11 +64,11 @@ app:layout_constraintLeft_toRightOf="@id/backCuenta"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/nameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Isaidj11"
+            android:text="Your profile"
 
             android:textColor="@color/black"
             android:textSize="20dp"

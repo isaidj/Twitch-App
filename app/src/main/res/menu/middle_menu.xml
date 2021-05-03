@@ -4,7 +4,7 @@
     <item
 
         android:id="@+id/noShow"
-        android:title="No volver a mostrar"
+        android:title="Don't show again"
         app:showAsAction="never"
 
 
@@ -16,8 +16,17 @@
         />
     <item
 
-        android:id="@+id/iconMessage"
-        android:title="Quitar categoria"
+        android:id="@+id/removeCategory"
+        android:title="Remove category"
+        app:showAsAction="never"
+
+        android:orderInCategory="20"
+        android:iconTint="@color/gris_top_menu"
+        />
+    <item
+
+        android:id="@+id/reportCategory"
+        android:title="Report categoty"
         app:showAsAction="never"
 
         android:orderInCategory="20"

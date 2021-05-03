@@ -8,7 +8,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
+
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
@@ -17,11 +17,15 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.view.Gravity
 import android.widget.ImageButton
 import android.widget.ImageView
+import androidx.appcompat.widget.Toolbar
 
 
 class MainActivity : AppCompatActivity() {
     // creamos variable para el nav view
     private lateinit var btnNavView: BottomNavigationView
+
+
+
     private lateinit var iconUser: ImageButton
 
 
@@ -33,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //message dialog en middlemenu
-
+//        ToastMiddleMenu()
         ToastTopMenu()
 
 
@@ -73,6 +77,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
     }
 
     private fun ToastTopMenu() {
@@ -107,6 +112,41 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
+
+//    private fun ToastMiddleMenu() {
+//
+//        val fragment :Fragment
+//
+//        val middleMenu=findViewById<Toolbar>(R.id.toolbar2)
+//        middleMenu.setOnMenuItemClickListener { item ->
+//            when (item.itemId) {
+//                R.id.noShow -> {
+//
+//
+//                    Toast.makeText(this,"No se volverá a mostrar",Toast.LENGTH_SHORT).show()
+//
+//
+//                    return@setOnMenuItemClickListener true
+//                }
+//                R.id.removeCategory -> {
+//
+//                    Toast.makeText(this,"Categoria removida",Toast.LENGTH_SHORT).show()
+//
+//                    return@setOnMenuItemClickListener true
+//                }
+//                R.id.reportCategory -> {
+//
+//
+//                    Toast.makeText(this,"Categoria reportada",Toast.LENGTH_SHORT).show()
+//
+//
+//                    return@setOnMenuItemClickListener true
+//                }
+//
+//            }
+//            false
+//        }
+//    }
 
     private fun makeCurrentFragment(fragment: Fragment)=supportFragmentManager.beginTransaction().apply {
 

@@ -12,8 +12,7 @@ class Messages : AppCompatActivity() {
         setContentView(R.layout.activity_messages)
         backChat=findViewById(R.id.backChat)
         backChat.setOnClickListener {
-            intent= Intent(this,MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }
