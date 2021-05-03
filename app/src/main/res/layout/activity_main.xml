@@ -36,11 +36,15 @@
 
                 />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-
+                android:maxHeight="5dp"
+                android:scaleType="centerCrop"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:adjustViewBounds="true"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 app:layout_constraintBottom_toBottomOf="@id/topMenu"

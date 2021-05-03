@@ -7,14 +7,20 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doOnTextChanged
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class Login : AppCompatActivity() {
+
+    private  var usuario= "isai"
+    private var contrasena="isai"
 
 
 private lateinit var name: EditText
@@ -41,11 +47,9 @@ private lateinit var btnSignIn: Button
 
         btnlog.setOnClickListener(){
 
-            intent = Intent(this,MainActivity::class.java).apply {
-                putExtra("name",name.text.toString())
-            }
+        verificacionUser()
 
-            startActivity(intent)
+
         }
 
         btnSignIn.setOnClickListener(){
@@ -84,6 +88,23 @@ private lateinit var btnSignIn: Button
 
 
 
+
+    }
+
+    private fun verificacionUser(){
+
+        if (name.text.toString()==usuario && password.text.toString()==contrasena ){
+            intent = Intent(this,MainActivity::class.java).apply {
+                putExtra("name",name.text.toString())
+            }
+
+            startActivity(intent)
+        }else{
+
+           btnlog.startAnimation(AnimationUtils.loadAnimation(this,R.anim.shake_btn))
+            Toast.makeText(this,"Password Incorrect",Toast.LENGTH_SHORT).show()
+
+        }
 
     }
 }

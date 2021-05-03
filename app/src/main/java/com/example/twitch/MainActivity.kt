@@ -1,6 +1,7 @@
 package com.example.twitch
 
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,14 +15,14 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.view.Gravity
-
-
-
+import android.widget.ImageButton
+import android.widget.ImageView
 
 
 class MainActivity : AppCompatActivity() {
     // creamos variable para el nav view
     private lateinit var btnNavView: BottomNavigationView
+    private lateinit var iconUser: ImageButton
 
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
@@ -50,6 +51,11 @@ class MainActivity : AppCompatActivity() {
 
         btnNavView = findViewById(R.id.bottomNavigationView)
         btnNavView.menu.getItem(1).isChecked = true
+
+        iconUser=findViewById(R.id.imageView7)
+        iconUser.setOnClickListener {
+            CallProfile()
+        }
 
 
         //
@@ -91,6 +97,12 @@ class MainActivity : AppCompatActivity() {
 
     replace(R.id.nav_host_fragment, fragment)
         commit()
+    }
+
+    private fun CallProfile(){
+        intent= Intent(this,profile::class.java)
+
+        startActivity(intent)
     }
 
 
