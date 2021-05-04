@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/privacy"
+    android:title="@string/privacy"
+    android:orderInCategory="10"
+
+ >
+
+</item>
+    <item android:id="@+id/security"
+         android:title="@string/security"
+        android:orderInCategory="20"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/configuration"
+        android:title="@string/configuration"
+        android:orderInCategory="30"
+        >
+
+    </item>
+</menu>

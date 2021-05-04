@@ -52,10 +52,11 @@ private lateinit var btnSignIn: Button
 
         }
 
+
         btnSignIn.setOnClickListener(){
 
             intent = Intent(this,SignIn::class.java).apply {
-                putExtra("name",name.text.toString())
+                putExtra("name",name.editableText.toString())
             }
 
             startActivity(intent)
@@ -68,7 +69,7 @@ private lateinit var btnSignIn: Button
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if(name.length()>1){
+                if(name.length() >= 1){
                     btnlog.isEnabled=true
                 }
                 if(name.length()<=1){
@@ -95,7 +96,7 @@ private lateinit var btnSignIn: Button
 
         if (name.text.toString()==usuario && password.text.toString()==contrasena ){
             intent = Intent(this,MainActivity::class.java).apply {
-                putExtra("name",name.text.toString())
+                putExtra("name",name.editableText.toString())
             }
 
             startActivity(intent)

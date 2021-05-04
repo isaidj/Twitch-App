@@ -16,7 +16,8 @@
         android:background="@color/white"
         android:src="@drawable/ic_close"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
     <TextView
         android:id="@+id/cuenta"
         android:layout_width="match_parent"
@@ -48,20 +49,39 @@ app:layout_constraintLeft_toRightOf="@id/backCuenta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cuenta">
+        app:layout_constraintTop_toBottomOf="@id/cuenta" >
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
 
-            android:layout_marginTop="15dp"
-            android:contentDescription="User profile"
-            android:src="@drawable/icon_gamer"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0"
+                android:contentDescription="User profile"
+                android:src="@drawable/icon_gamer"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menu="@menu/menu_account"
+                />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/nameUser"
@@ -69,7 +89,7 @@ app:layout_constraintLeft_toRightOf="@id/backCuenta"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="Your profile"
-
+android:layout_weight="1"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"

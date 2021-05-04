@@ -21,7 +21,11 @@ class SignIn : AppCompatActivity() {
     private lateinit var username : EditText
     private lateinit var password : EditText
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
@@ -29,15 +33,23 @@ class SignIn : AppCompatActivity() {
         // Get the Intent that started this activity and extract the string
 
 
+
         email=findViewById(R.id.fieldUsername4)
         username=findViewById(R.id.fieldUsername)
         password=findViewById(R.id.fieldPassword)
         btnSingIn= findViewById<Button>(R.id.btnSignUp)
+
+
+
+
         btnSingIn.setOnClickListener () {
 
 
 
+
+
             val builder = AlertDialog.Builder(this)
+
 
             builder.setTitle("Create account")
             builder.setMessage("¿Do you want create this account?")
@@ -63,8 +75,13 @@ class SignIn : AppCompatActivity() {
 
 private fun CallMainMenu (){
 
-intent = Intent(this,MainActivity::class.java)
+
+intent = Intent(this,MainActivity::class.java).apply {
+    putExtra("name",username.editableText.toString())
+}
+
     startActivity(intent)
+
 
 }
 }

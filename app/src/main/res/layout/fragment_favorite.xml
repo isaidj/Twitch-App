@@ -12,7 +12,7 @@
         android:id="@+id/recommendedCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="My favorites channels"
+        android:hint="@string/my_favorites_channels"
         android:textColorHint="@color/black"
         android:textStyle="bold"
         android:textSize="20dp"

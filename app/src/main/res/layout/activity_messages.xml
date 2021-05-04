@@ -28,7 +28,7 @@
 
         android:layout_marginLeft="16dp"
 
-        android:text="Social"
+        android:text="@string/social"
         android:textColor="@color/black"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -44,7 +44,7 @@
         android:layout_marginLeft="16dp"
 
         android:layout_marginTop="24dp"
-        android:text="Friends"
+        android:text="@string/friends"
         android:textColor="@color/gris_top_menu"
         android:textSize="15dp" android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
-        android:text="whispers"
+        android:text="@string/whispers"
         android:textColor="@color/gris_top_menu"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginBottom="16dp"
-        android:text="Twitch is better with friends"
+        android:text="@string/twitch_is_better_with_friends"
         android:textColor="@color/gris_top_menu"
         android:textSize="15dp"
         android:textStyle="bold"
@@ -88,7 +88,7 @@
         android:layout_marginEnd="159dp"
         android:layout_marginRight="159dp"
         android:layout_marginBottom="363dp"
-        android:text="Add friends"
+        android:text="@string/add_friends"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

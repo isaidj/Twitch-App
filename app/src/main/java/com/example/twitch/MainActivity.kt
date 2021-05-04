@@ -155,7 +155,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun CallProfile(){
-        intent= Intent(this,profile::class.java)
+        val  name=intent.getStringExtra("name")
+        intent= Intent(this,profile::class.java).apply {
+            putExtra("name",name)
+        }
 
         startActivity(intent)
     }

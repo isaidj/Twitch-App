@@ -17,4 +17,13 @@
     <string name="verify">Necesitas verificar que eres propietario de esta cuenta</string>
     <string name="trouble_logging_in">¿Problemas con el inicio?</string>
     <string name="password">Constraseña</string>
+    <string name="security">Seguridad</string>
+    <string name="configuration">Configuracion</string>
+    <string name="privacy">Privacidad</string>
+    <string name="recommended_categories">Categorias recomendadas</string>
+    <string name="recommended_just_chatting_channels">" Categoria Just Chatting Channels"</string>
+    <string name="my_favorites_channels">Mis canales favoritos</string>
+    <string name="social">Social</string>
+    <string name="whispers">Susurros</string>
+    <string name="friends">Amigos</string>
 </resources>
