@@ -4,6 +4,9 @@
 
         <item
             android:drawable="@mipmap/ic_launcher_twitch"
-            android:gravity="center" />
+            android:gravity="center"
+
+
+            />
 
 </layer-list>

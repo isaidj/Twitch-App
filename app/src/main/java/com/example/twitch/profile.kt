@@ -16,9 +16,9 @@ class profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
         val  name=intent.getStringExtra("name")
-        nameUser.text=name
+        nameUser.text   =name
 
-
+        // Uso de SetOnMenuItemClickListener para selecionar los diferentes botones del menu. When=Switch
         val profileMenu=findViewById<Toolbar>(R.id.toolbarProfile)
         profileMenu.setOnMenuItemClickListener{
             item ->
@@ -38,6 +38,8 @@ class profile : AppCompatActivity() {
             }
             false
         }
+
+        //Finalizar Activity
 
         btnBack=findViewById(R.id.backCuenta)
         btnBack.setOnClickListener {

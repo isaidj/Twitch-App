@@ -22,7 +22,7 @@ class Login : AppCompatActivity() {
     private  var usuario= "isai"
     private var contrasena="isai"
 
-
+//Asignamos variables
 private lateinit var name: EditText
 private lateinit var password: EditText
 private lateinit var btnlog: Button
@@ -37,13 +37,15 @@ private lateinit var btnSignIn: Button
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        //Buscamos los componentes
+
         name=findViewById(R.id.fieldUsername)
         password=findViewById(R.id.fieldPassword)
         btnlog=findViewById(R.id.btnLogin)
         btnSignIn=findViewById(R.id.btnSignUpLog)
 
 
-
+//    setOnClickListener
 
         btnlog.setOnClickListener(){
 
@@ -62,7 +64,7 @@ private lateinit var btnSignIn: Button
             startActivity(intent)
         }
 
-
+//usamos un  TextWatcher para notar los cambios en el texto
         name.addTextChangedListener (object : TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 Log.i("beforeTextChanged:  ","Not override")
@@ -92,6 +94,7 @@ private lateinit var btnSignIn: Button
 
     }
 
+    //Verficcion del usuario
     private fun verificacionUser(){
 
         if (name.text.toString()==usuario && password.text.toString()==contrasena ){

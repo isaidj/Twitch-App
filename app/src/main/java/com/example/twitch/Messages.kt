@@ -11,6 +11,8 @@ class Messages : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_messages)
         backChat=findViewById(R.id.backChat)
+
+        //Para finalizar la Activity
         backChat.setOnClickListener {
             finish()
         }

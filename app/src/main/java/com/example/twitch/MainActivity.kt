@@ -18,6 +18,7 @@ import android.view.Gravity
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        //
+        //Sistema de navegacion de Fragmentos
      btnNavView.setOnNavigationItemSelectedListener {
 
          when (it.itemId){
@@ -74,11 +75,19 @@ class MainActivity : AppCompatActivity() {
          true
      }
 
+        imageView7.setOnClickListener {
+            CallProfile()
+
+            Toast.makeText(applicationContext,"Abriendo", Toast.LENGTH_SHORT).show()
+
+        }
+
 
 
 
 
     }
+    // Funcion de menu Top
 
     private fun ToastTopMenu() {
         val topmenu=findViewById<Toolbar>(R.id.topMenu)
@@ -147,13 +156,7 @@ class MainActivity : AppCompatActivity() {
 //            false
 //        }
 //    }
-
-    private fun makeCurrentFragment(fragment: Fragment)=supportFragmentManager.beginTransaction().apply {
-
-    replace(R.id.nav_host_fragment, fragment)
-        commit()
-    }
-
+//Intent a Profile y Enviamos nombre
     private fun CallProfile(){
         val  name=intent.getStringExtra("name")
         intent= Intent(this,profile::class.java).apply {
@@ -162,6 +165,14 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+
+    private fun makeCurrentFragment(fragment: Fragment)=supportFragmentManager.beginTransaction().apply {
+
+    replace(R.id.nav_host_fragment, fragment)
+        commit()
+    }
+
+
 
 
 

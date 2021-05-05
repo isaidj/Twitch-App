@@ -16,6 +16,7 @@ import android.widget.Toast
 
 class SignIn : AppCompatActivity() {
 
+    //asignamos variables
     private lateinit var btnSingIn:Button
     private lateinit var email : EditText
     private lateinit var username : EditText
@@ -32,7 +33,7 @@ class SignIn : AppCompatActivity() {
 
         // Get the Intent that started this activity and extract the string
 
-
+//Obtenemos componentes
 
         email=findViewById(R.id.fieldUsername4)
         username=findViewById(R.id.fieldUsername)
@@ -46,7 +47,7 @@ class SignIn : AppCompatActivity() {
 
 
 
-
+//Estrucutra de un AlertDialog
 
             val builder = AlertDialog.Builder(this)
 
@@ -73,6 +74,7 @@ class SignIn : AppCompatActivity() {
 
     }
 
+    //Lammamos el intent MainActivity
 private fun CallMainMenu (){
 
 

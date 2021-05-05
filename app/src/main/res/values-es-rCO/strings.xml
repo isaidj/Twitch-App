@@ -21,9 +21,12 @@
     <string name="configuration">Configuracion</string>
     <string name="privacy">Privacidad</string>
     <string name="recommended_categories">Categorias recomendadas</string>
-    <string name="recommended_just_chatting_channels">" Categoria Just Chatting Channels"</string>
+    <string name="recommended_just_chatting_channels">" Categoría Just Chatting Channels"</string>
     <string name="my_favorites_channels">Mis canales favoritos</string>
     <string name="social">Social</string>
     <string name="whispers">Susurros</string>
     <string name="friends">Amigos</string>
+    <string name="twitch_is_better_with_friends">Twitch es mejor con amigos</string>
+    <string name="add_friends">Añadir amigos</string>
+    <string name="browseTitle">Navegar</string>
 </resources>
